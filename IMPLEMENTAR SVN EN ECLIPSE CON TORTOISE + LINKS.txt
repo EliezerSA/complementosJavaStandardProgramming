@@ -1,0 +1,28 @@
+IMPLEMENTAR SVN EN ECLIPSE CON TORTOISE - PASOS
+Para implementar Subversion (SVN) en Eclipse, sigue los siguientes pasos:
+
+Paso 1: Instalar el plugin SVN en Eclipse
+1. Abre Eclipse.
+2. Ve a "Help" (Ayuda) en la barra de menú y selecciona "Eclipse Marketplace" (Mercado de Eclipse).
+3. En el cuadro de búsqueda, ingresa "Subversive" o "Subclipse" para encontrar el plugin SVN.
+4. Selecciona el plugin SVN que deseas instalar y haz clic en "Go" (Ir).
+5. Selecciona el plugin en la lista de resultados y haz clic en "Go to Marketplace" (Ir al mercado).
+6. Sigue las instrucciones en pantalla para completar la instalación del plugin SVN.
+
+Paso 2: Configurar una conexión SVN
+1. Una vez que el plugin SVN esté instalado, ve a "Window" (Ventana) en la barra de menú y selecciona "Perspective" (Perspectiva) > "SVN Repository Exploring" (Exploración de repositorios SVN) para abrir la perspectiva de SVN en Eclipse.
+2. En la vista de "SVN Repository Exploring", haz clic derecho en el panel vacío y selecciona "New" (Nuevo) > "Repository Location" (Ubicación del repositorio).
+3. Ingresa la URL del repositorio SVN al que deseas conectarte en el campo "URL" y haz clic en "Finish" (Finalizar).
+4. Si el repositorio requiere autenticación, ingresa tus credenciales (nombre de usuario y contraseña) en los campos correspondientes y haz clic en "OK".
+
+Paso 3: Importar un proyecto SVN en Eclipse
+1. Ve a "File" (Archivo) en la barra de menú y selecciona "Import" (Importar).
+2. En la ventana de importación, selecciona "SVN" y luego "Checkout Projects from SVN" (Proyectos de checkout desde SVN). Haz clic en "Next" (Siguiente).
+3. Selecciona la opción "Create a new repository location" (Crear una nueva ubicación de repositorio) o selecciona una ubicación de repositorio existente si ya has configurado una conexión SVN previamente. Haz clic en "Next" (Siguiente).
+4. Selecciona el repositorio SVN y la ruta del proyecto que deseas importar en el repositorio. Puedes seleccionar varias rutas si deseas importar varios proyectos a la vez. Haz clic en "Next" (Siguiente).
+5. Elige la carpeta de destino en tu sistema de archivos donde deseas que se descargue el proyecto SVN. Haz clic en "Finish" (Finalizar) para importar el proyecto.
+
+Paso 4: Utilizar las funciones SVN en Eclipse
+Después de importar el proyecto SVN en Eclipse, podrás utilizar varias funciones SVN para gestionar el control de versiones, como hacer checkout, commit, update, revert, crear ramas y fusionar cambios. Puedes acceder a estas funciones mediante clic derecho en el proyecto o archivos en el Explorador de Proyectos de Eclipse y seleccionando las opciones SVN en el menú contextual.
+
+Espero que estos pasos te ayuden a implementar SVN en Eclipse y puedas gestionar tus proyectos con control de versiones de manera efectiva. ¡Buena suerte!

@@ -1,0 +1,50 @@
+// Clase padre o clase base
+class Vehiculo {
+    String marca;
+    String modelo;
+    int año;
+
+    // Constructor de la clase Vehiculo
+    public Vehiculo(String marca, String modelo, int año) {
+        this.marca = marca;
+        this.modelo = modelo;
+        this.año = año;
+    }
+
+    // Método para mostrar la información del vehículo
+    public void mostrarInfo() {
+        System.out.println("Marca: " + marca);
+        System.out.println("Modelo: " + modelo);
+        System.out.println("Año: " + año);
+    }
+}
+
+// Clase hija o clase derivada que hereda de la clase Vehiculo
+class Automovil extends Vehiculo {
+    int numPuertas;
+
+    // Constructor de la clase Automovil
+    public Automovil(String marca, String modelo, int año, int numPuertas) {
+        // Llamada al constructor de la clase padre Vehiculo
+        super(marca, modelo, año);
+        this.numPuertas = numPuertas;
+    }
+
+    // Método para mostrar la información del automóvil
+    @Override
+    public void mostrarInfo() {
+        super.mostrarInfo(); // Llamada al método mostrarInfo() de la clase Vehiculo
+        System.out.println("Número de Puertas: " + numPuertas);
+    }
+}
+
+// Clase principal para probar la herencia de clases
+public class EjemploHerenciaAutomovil {
+    public static void main(String[] args) {
+        // Creación de un objeto de la clase Automovil
+        Automovil miAutomovil = new Automovil("Toyota", "Camry", 2022, 4);
+        
+        // Llamada al método mostrarInfo() del objeto miAutomovil
+        miAutomovil.mostrarInfo();
+    }
+}
